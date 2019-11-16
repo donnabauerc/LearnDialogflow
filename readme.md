@@ -19,8 +19,8 @@ Due to the best rating (4.4) & the fact that the course is with 10561 students a
 and 124 lectures.
 
 + Requirements:
- + you need to know what chatbots are
- + for the second part of the course you need to know the basics of JavaScript and Node.js
+  + you need to know what chatbots are
+  + for the second part of the course you need to know the basics of JavaScript and Node.js
 
 
 + Learning content:
