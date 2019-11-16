@@ -35,3 +35,13 @@ and 124 lectures.
   + using all the possible message types: text, images, video, quick replies, buttons, carousels,...
   + having a chatbot that can be easily extended to connect to other APIs
   + having a chatbot that answers FAQ
+
+# The Course:
+### Section 1: Introduction to the course
+
+#### Requirements:
+  + Facebook Developer Account
+  + Dialogflow Account
+
+#### Usual Chatbot Architecture:
+![chatbotArchitecture](/media/chatbotArchitecture.png)
