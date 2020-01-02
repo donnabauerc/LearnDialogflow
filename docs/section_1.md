@@ -5,4 +5,4 @@
   + Dialogflow Account
 
 #### Usual Chatbot Architecture:
-![chatbotArchitecture](../media/chatbotArchitecture.png)
+![chatbotArchitecture](../assets/chatbotArchitecture.png)
