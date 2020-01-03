@@ -84,3 +84,12 @@ If we want to use an entity of another context we have to use the #.entity-name
   + We type everything the bot wants ...
 
 If we check the Raw Json we can see all context, which are alive and the updated lifespans
+
+#### What happens if the user doesn't want to apply right now?:
+
++ add Intent:
+  + name: no-job-apply
+  + input context: job
+  + Training phrases: "Maybe ater", "I'll apply later", "Nothing interesting", "I won't apply", "Not right now", "No"
+  + action name: no-job-apply
+  + Facebook Messenger Text Response: "No problem. Talk to me again and if we have more job opening I'll let you know", "Ok. We can talk another time."
