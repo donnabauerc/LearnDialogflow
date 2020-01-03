@@ -63,5 +63,24 @@ Why Entity @sys.any and not @sys.given-name? Because Dialogflow only would recog
   + check required
   + name: phone-number
   + entity: @sys.any
-  + define prompts: "Tell me your phone number?", "At what number can we reach you?", "Can you give me your phone number?"
+  + define prompts: "Tell me your phone number", "At what number can we reach you?", "Can you give me your phone number?"
 
++ add Facebook Messenger Text Response: "Thank you $user-name for your application. My boss will call you ASAP. Have a great day!", "Your application for the #job_application.job-vacancy will be processed as soon as possible. We'll contact you shortly."
+
+If we want to use an entity of another context we have to use the #.entity-name
+
++ remove output context: because this is the end of the conversation
++ add action name: detailed-application
+
+#### Testing the job interview:
+
++ After the bot is done with training go to the try it now console and type (Response has to be Facebook Messenger): 
+  + "Is there a job opening in your store"
+  + If you click onto Diagnostic Info you can see the Raw Api Response (Context have a **lifespan**: = Scope, if the intents match than that Context exist for 5 further questions etc.)
+  + Now we don't use a quick reply we type: "Yes, I want to apply"
+  + Dialogflow now knows that we are interested, but didn't name the job we are interested in (under default response)
+  + Next we type: "I want to apply as a Bookkeeper" (Facebook Messenger)
+  + Next we type: "OK" (Default Response)
+  + We type everything the bot wants ...
+
+If we check the Raw Json we can see all context, which are alive and the updated lifespans
